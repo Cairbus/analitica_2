@@ -91,7 +91,6 @@ elif selected=="Predicción":
         "Enero": 1, "Febrero": 2, "Marzo": 3, "Abril": 4, "Mayo": 5, "Junio": 6,
         "Julio": 7, "Agosto": 8, "Septiembre": 9, "Octubre": 10, "Noviembre": 11, "Diciembre": 12}
     mes=st.selectbox("Mes de referencia para realizar la predicción:",list(meses_dict.keys()))
-    semana=st.number_input("Escribe la semana de referencia",min_value=0,max_value=4)
     día=st.number_input("Escribe el día de referencia",min_value=0,max_value=31)
     
     if 1<=día<=31:
@@ -100,14 +99,14 @@ elif selected=="Predicción":
         
         otro="otro.png"
         incendio="incendio.jpg"
-        volcamiento="volcamniento.png"
+        volcamiento="volcamniento.jpg"
         choque="choque.jpg"
         caida_ocupante="caida.jpg"
         def numero_aleatorio():
             return random.randint(1, 5)
         result=numero_aleatorio()
         st.success('Aquí está la predicción')
-        st.write("Nuestra predicción arroja que el evento más probable es:",result)
+        st.write("Nuestra predicción arroja que el evento más probable es:")
         if result==1:
             st.subheader("CAIDA DE OCUPANTE")
             st.image(caida_ocupante)
@@ -123,4 +122,5 @@ elif selected=="Predicción":
         elif result==5:
             st.subheader("OTRO")
             st.image(otro)
+            
             
