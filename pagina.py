@@ -85,6 +85,7 @@ if selected == "Datos históricos de accidentalidad":
 
 elif selected=="¿Cómo usarlo?":
     st.video("https://www.youtube.com/watch?v=UlQwcvwNMvo&pp=ygUcYWNjaWRlbnRlcyBlbiBtZWRlbGxpbiBkYXRvcw%3D%3D")
+    st.subheader("También puedes encontrar el informe y el proceso de creacion del modelo en el siguiente repositorio de GitHub https://github.com/alejozq/Trabajo-2-Analitica")
     
 elif selected=="Predicción":
     meses_dict = {
