@@ -84,7 +84,8 @@ if selected == "Datos históricos de accidentalidad":
     display_map(df_filtered, month, tipo_choque)
 
 elif selected=="¿Cómo usarlo?":
-    st.video("https://youtu.be/U6dW1nEns9I?si=46kiS9qpsUbNmVe2")
+    st.video("https://www.youtube.com/watch?v=UlQwcvwNMvo&pp=ygUcYWNjaWRlbnRlcyBlbiBtZWRlbGxpbiBkYXRvcw%3D%3D")
+    
     st.subheader("También puedes encontrar el informe y el proceso de creacion del modelo en el siguiente repositorio de GitHub https://github.com/alejozq/Trabajo-2-Analitica")
     
 elif selected=="Predicción":
@@ -123,5 +124,6 @@ elif selected=="Predicción":
         elif result==5:
             st.subheader("OTRO")
             st.image(otro)
+            
             
             
